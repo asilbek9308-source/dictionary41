@@ -1,0 +1,47 @@
+name: personal_dictionary
+description: A beautiful, smooth personal dictionary app with local storage.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.0
+  
+  # Local Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # UI & Animations
+  animations: ^2.0.0
+  
+  # Utility
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.0
+  build_runner: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/
+
+  # Fonts (optional - using default)
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: assets/fonts/CustomFont-Regular.ttf
+  #       - asset: assets/fonts/CustomFont-Bold.ttf
+  #         weight: 700
